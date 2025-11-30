@@ -1,6 +1,6 @@
 export default ({ env }) => ({
   auth: {
-    secret: env('STRAPI_ADMIN_JWT_SECRET'),
+    secret: env('ADMIN_JWT_SECRET'),
     sessions: {
       // Session will expire after 30 days of inactivity
       maxSessionLifespan: 1000 * 60 * 60 * 24 * 30, // 30 days in milliseconds
@@ -9,15 +9,12 @@ export default ({ env }) => ({
     },
   },
   apiToken: {
-    salt: env('STRAPI_API_TOKEN_SALT'),
+    salt: env('API_TOKEN_SALT'),
   },
   transfer: {
     token: {
-      salt: env('STRAPI_TRANSFER_TOKEN_SALT'),
+      salt: env('TRANSFER_TOKEN_SALT'),
     },
-  },
-  secrets: {
-    encryptionKey: env('STRAPI_ENCRYPTION_KEY'),
   },
   flags: {
     nps: env.bool('FLAG_NPS', true),

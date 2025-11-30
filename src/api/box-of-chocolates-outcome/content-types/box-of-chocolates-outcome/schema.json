@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "box_of_chocolates_outcomes",
+  "info": {
+    "singularName": "box-of-chocolates-outcome",
+    "pluralName": "box-of-chocolates-outcomes",
+    "displayName": "Box of Chocolates Outcome",
+    "description": "Random outcomes for the Box of Chocolates page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "emoji": {
+      "type": "string",
+      "required": true
+    },
+    "displayOrder": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

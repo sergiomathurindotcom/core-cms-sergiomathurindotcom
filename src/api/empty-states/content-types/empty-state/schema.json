@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "empty_states",
+  "info": {
+    "singularName": "empty-state",
+    "pluralName": "empty-states",
+    "displayName": "Empty States",
+    "description": "Messages for empty/loading states"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogPostsEmpty": {
+      "type": "string",
+      "default": "No blog posts yet. The first one is brewing..."
+    },
+    "projectsEmpty": {
+      "type": "string",
+      "default": "No projects yet. Check back soon!"
+    },
+    "ideasEmptyAll": {
+      "type": "string",
+      "default": "The idea backlog is empty. Time to start dreaming!"
+    },
+    "ideasEmptyFiltered": {
+      "type": "string",
+      "default": "No ideas with this status. Try another filter!"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Settings",
+    "description": "Global site content and configuration"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteMantra": {
+      "type": "string",
+      "default": "Learn. Apply. Create.",
+      "required": true
+    },
+    "heroTitle": {
+      "type": "string",
+      "default": "Sergio Mathurin",
+      "required": true
+    },
+    "heroSubtitle": {
+      "type": "string",
+      "default": "Computer Scientist, Data Scientist, Mad Scientist",
+      "required": true
+    },
+    "heroDescription": {
+      "type": "text",
+      "default": "I work on things I find interesting. Hard problems, weird ideas, cool solutions."
+    }
+  }
+}

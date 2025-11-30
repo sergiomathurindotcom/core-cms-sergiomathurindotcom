@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idea_snapshots",
+  "info": {
+    "singularName": "idea-snapshot",
+    "pluralName": "idea-snapshots",
+    "displayName": "Idea Snapshot",
+    "description": "Snapshots of ideas at specific points in time to track evolution"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idea": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::idea.idea",
+      "inversedBy": "snapshots"
+    },
+    "snapshotDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "priority": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "triggerType": {
+      "type": "enumeration",
+      "enum": ["auto", "manual"],
+      "default": "auto",
+      "required": true
+    },
+    "triggerSource": {
+      "type": "string"
+    },
+    "changeNotes": {
+      "type": "text"
+    },
+    "snapshotData": {
+      "type": "json"
+    }
+  }
+}
